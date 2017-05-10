@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Implementation-Title: JPO_harjoitustyo
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: S
+Implementation-Vendor-Id: JPO_harjoitustyo
+Class-Path: target/spring-boot-starter-web-1.4.4.RELEASE.jar target/sp
+ ring-boot-starter-1.4.4.RELEASE.jar target/spring-boot-1.4.4.RELEASE.
+ jar target/spring-boot-autoconfigure-1.4.4.RELEASE.jar target/spring-
+ boot-starter-logging-1.4.4.RELEASE.jar target/logback-classic-1.1.9.j
+ ar target/logback-core-1.1.9.jar target/slf4j-api-1.7.22.jar target/j
+ cl-over-slf4j-1.7.22.jar target/jul-to-slf4j-1.7.22.jar target/log4j-
+ over-slf4j-1.7.22.jar target/spring-core-4.3.6.RELEASE.jar target/sna
+ keyaml-1.17.jar target/spring-boot-starter-tomcat-1.4.4.RELEASE.jar t
+ arget/tomcat-embed-core-8.5.11.jar target/tomcat-embed-el-8.5.11.jar 
+ target/tomcat-embed-websocket-8.5.11.jar target/hibernate-validator-5
+ .2.4.Final.jar target/validation-api-1.1.0.Final.jar target/jboss-log
+ ging-3.3.0.Final.jar target/classmate-1.3.3.jar target/jackson-databi
+ nd-2.8.6.jar target/jackson-annotations-2.8.6.jar target/jackson-core
+ -2.8.6.jar target/spring-web-4.3.6.RELEASE.jar target/spring-aop-4.3.
+ 6.RELEASE.jar target/spring-beans-4.3.6.RELEASE.jar target/spring-con
+ text-4.3.6.RELEASE.jar target/spring-webmvc-4.3.6.RELEASE.jar target/
+ spring-expression-4.3.6.RELEASE.jar target/eclipselink-2.5.0-RC1.jar 
+ target/javax.persistence-2.1.0-RC1.jar target/commonj.sdo-2.1.1.jar t
+ arget/mysql-connector-java-5.1.32.jar target/httpclient-4.5.3.jar tar
+ get/httpcore-4.4.6.jar target/commons-codec-1.10.jar
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://projects.spring.io/spring-boot/JPO_harjoitu
+ styo/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: view.Application
+

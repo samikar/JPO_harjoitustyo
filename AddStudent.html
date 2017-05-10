@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add student</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+function insertStudent() {
+	var request = '/insertstudent?name=';
+	var name = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+	var mobile = document.getElementById("mobile").value;
+	var credits = document.getElementById("credits").value;
+	var grade = document.getElementById("grade").value;
+	if (document.getElementById("available").checked == true) {
+		var available = "1";
+	}
+	else {
+		var available = "0";
+	}
+	var url = request.concat(name);
+	var url = url.concat("&email=");
+	var url = url.concat(email);
+	var url = url.concat("&mobile=");
+	var url = url.concat(mobile);
+	var url = url.concat("&credits=");
+	var url = url.concat(credits);
+	var url = url.concat("&grade=");
+	var url = url.concat(grade);
+	var url = url.concat("&available=");
+	var url = url.concat(available);
+	
+	window.location.href = url;
+}
+</script>
+</head>
+<body>
+<table>
+<tr><td>Name</td><td><input type="text" id="name" name="name"></td></tr>
+<tr><td>Email</td><td><input type="text" id="email" name="email"></td></tr>
+<tr><td>Mobile</td><td><input type="text" id="mobile" name="mobile"></td></tr>
+<tr><td>Credits</td><td><input type="text" id="credits" name="credits"></td></tr>
+<tr><td>Grade</td><td><input type="text" id="grade" name="grade"></td></tr>
+<tr><td>Available</td><td><input type="checkbox" id="available" name="available"></td></tr>
+<tr><td colspan="2"><button onclick="insertStudent()">Add student</button></td></tr>
+</form>
+</table>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Propose a project</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+function insertProject() {
+	var request = '/insertproject?company=';
+	var company = document.getElementById("company").value;
+	var email = document.getElementById("email").value;
+	var desc = document.getElementById("desc").value;
+	if (document.getElementById("open").checked == true) {
+		var open = "1";
+	}
+	else {
+		var open = "0";
+	}
+	var url = request.concat(company);
+	var url = url.concat("&email=");
+	var url = url.concat(email);
+	var url = url.concat("&desc=");
+	var url = url.concat(desc);
+	var url = url.concat("&open=");
+	var url = url.concat(open);
+	
+	window.location.href = url;
+}
+</script>
+<table>
+<tr><td>Company</td><td><input type="text" id="company" name="company"></td></tr>
+<tr><td>Contact email</td><td><input type="text" id="email" name="email"></td></tr>
+<tr><td valign="top">Project description</td><td><textarea rows="4" cols ="50" id="desc" name="desc"></textarea></td></tr>
+<tr><td>Open for students</td><td><input type="checkbox" id="open" name="open"></td></tr>
+<tr><td colspan="2"><button onclick="insertProject()">Add project</button></td></tr>
+</table>
+</body>
+</html>
